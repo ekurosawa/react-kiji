@@ -1,0 +1,233 @@
+@charset "UTF-8";
+
+/*共通部分*/
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Yu Gothic Medium", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    line-height: 1.7;
+    /*行の高さの指定*/
+    color: #b44444;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*ヘッダー*/
+.logo {
+    width: 210px;
+    margin-top: 14px;
+}
+
+.main-nav {
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style: none;
+}
+
+.main-nav li {
+    margin-left: 36px;
+}
+
+.main-nav a {
+    color: #432;
+}
+
+.main-nav a:hover {
+    color: #0bd;
+}
+
+.page-header {
+    display: flex; /*横並びの設定*/
+    justify-content: space-between; /*両端の設置の指定*/
+}
+
+.wrapper {
+    max-width: 110%;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+
+/*ホームコンテンつ*/
+.home-content {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.home-content p {
+    font-size: 1.125rem;
+    margin: 10px 0 42px;
+}
+
+.page-title {
+    position:  relative; 
+    top: auto;
+    text-align: center;
+
+    font-size: 5rem;
+    font-family: "Philosopher", serif;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.button {
+    font-size: 1.375rem;
+    background: #0bd;
+    color: #fff;
+    border-radius: 5px;
+    padding: 18px 32px;
+}
+.button:hover {
+    background: #0090aa;
+}
+
+.big-bg {
+    background-size: cover;
+    background-position: center top;
+}
+
+#home {
+    background-image: url(../images/ohanamc.jpg);
+    min-height: 100vh;
+}
+
+#home .page-title {
+    text-transform: none;
+}
+
+
+
+/*NEWS*/
+#news {
+    background-image: url(../images/22454149_m.jpg);
+    height: 320px;
+    margin-bottom: 40px;
+}
+
+#news .page-title {
+    text-align: center;
+}
+
+
+/*キジとサイドの横並び骨組み*/
+.news-contents {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+/*キジ部分*/
+article {
+    width: 60%;
+    order: 2;
+}
+.ad {
+    margin-right: 120px;
+    order: 1;
+}
+
+.post-info {
+    position: relative;
+    padding-top: 4px;
+    margin-bottom: 40px;
+}
+
+/*日付ロゴ*/
+.post-date {
+    background: #0bd;
+    border-radius: 50%;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    font-size: 1.625rem;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    padding-top: 10px;
+}
+.post-date span {
+    font-size: 1rem;
+    border-top: 1px rgba(255,255,255,.5) solid;
+    padding-top: 6px;
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+
+/*タイトルとカテゴリーの装飾*/
+.post-title {
+    font-family: "Yu Mincho", "Yumincho", serif;
+    font-size: 2rem;
+    font-weight: normal;
+}
+.post-title,
+.post-cat {
+    margin-left: 120px;
+}
+
+/*画像と本文*/
+article img {
+    width: 80%;
+    margin-bottom: 20px;
+}
+article p {
+    margin-bottom: 1rem;
+}
+
+
+/*サイドバー*/
+aside {
+    
+    width: 22%;
+    order: 3;
+}
+.sub-title {
+    font-size: 1.375rem;
+    padding: 0 8px 8px;
+    border-bottom: 2px #0bd solid;
+    font-weight: normal;
+}
+/*右カラム文章*/
+aside p {
+    padding: 12px;
+}
+/*右リスト全体の装飾*/
+.sub-menu {
+    margin-bottom: 60px;
+    list-style: none;
+}
+.sub-menu li {
+    border-bottom: 1px #ddd solid;
+}
+.sub-menu a {
+    color: #432;
+    padding: 10px;
+    display: block; /*リンクのクリックできる範囲を広げる*/
+}
+.sub-menu a:hover {
+    color: #0bd;
+}
+
+
+
+/*フッター*/
+footer {
+    background: #432;
+    text-align: center;
+    padding: 26px 0;
+}
+
+footer p {
+    color: #fff;
+    font-size: 0.875rem;
+}
